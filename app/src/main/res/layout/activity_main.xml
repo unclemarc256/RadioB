@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Heading for Rating -->
+    <TextView
+        android:id="@+id/textViewRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate this Lesson"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- RadioGroup for Rating -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewRating"
+        android:orientation="horizontal"
+        android:textAlignment="textStart"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:id="@+id/radioButtonExcellent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Excellent" />
+
+        <RadioButton
+            android:id="@+id/radioButtonGood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good" />
+
+        <RadioButton
+            android:id="@+id/radioButtonOkay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Okay" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPoor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Poor" />
+    </RadioGroup>
+
+    <!-- Heading for Suggestions -->
+    <TextView
+        android:id="@+id/textViewSuggestions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Give Your few Suggestions Here"
+        android:textSize="18sp"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- CheckBoxes for Suggestions -->
+    <CheckBox
+        android:id="@+id/checkBoxEnjoyed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSuggestions"
+        android:text="I really enjoyed this lesson" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPrefer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBoxEnjoyed"
+        android:text="I will prefer this lesson to others" />
+
+
+    <CheckBox
+        android:id="@+id/checkBoxMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBoxPrefer"
+        android:text="I would like to hear more from you" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSatisfied"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBoxMore"
+        android:text="I am satisfied with the content and full description" />
+
+    <!-- Add more checkboxes for additional suggestions -->
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBoxSatisfied"
+        android:text="Submit"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
